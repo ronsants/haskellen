@@ -1,0 +1,15 @@
+{
+  "name": "Haskell Dev Container (GHCup)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "bash .devcontainer/setup-haskell.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "haskell.haskell"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
